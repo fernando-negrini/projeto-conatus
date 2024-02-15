@@ -1,0 +1,222 @@
+
+.card-deck {
+    
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 50px;
+    
+}
+.services{
+    width: 95%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    margin: 30px;
+    justify-content: center;
+}
+.title-services{
+    justify-content: center;
+    width: 90%;
+}
+.row{
+    width: 90%;
+    margin: 50px;
+    
+    justify-content: center;
+}
+.container-about{
+    width: 40%;
+}
+.imagem-about{
+    width: 40%;
+    justify-content: end;
+
+}
+.title-about{
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+/* Parte do contato*/
+
+.container-contact{
+    display: flex;
+}
+section{
+    
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 45px;
+    background: #1d1d2e;
+    width: 500px;
+    box-shadow: rgba(0,0,0,0.4) 0px 2px 4px, rgba(0,0,0,0.3) 0px 7px 13px -3px;
+    margin-left: 50px;
+
+}
+
+section h2{
+    color: #f5f5f5;
+    font-size: 2.0rem;
+    margin: 1.5rem;
+    
+}
+section form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+form label{
+    color: #f5f5f5;
+    font-size: 17px;
+    margin-bottom: 4px;
+}
+forminput{
+    padding: 15px;
+    outline: none;
+    border: 0;
+    margin-bottom: 20px;
+    font-size: 15px;
+    transition: all 0.5s;
+}
+form input:focus{
+    border-radius: 16px;
+}
+form textarea{
+    padding: 10px;
+    outline: none;
+    border: 0;
+    font-size: 15px;
+    margin-bottom: 30px;
+    transition: all 0.5s;
+}
+form textarea:focus{
+    border-radius: 16px;
+}
+form button{
+    padding: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    background: transparent;
+    border: 2px solid #f5f5f5;
+    color: #f5f5f5;
+    transition: all 1s;
+    margin-bottom: 20px;
+}
+form button:hover{
+    background: #f5f5f5;
+    color: #101026;
+    border-radius: 16px;
+}
+.sobre-title {
+    justify-content: flex-end;
+    padding: 40px;
+}
+
+.contact {
+    padding: 20px;
+    max-width: 100%;
+    display: column;
+    justify-content: cover;
+    
+}
+.contactus .contact-title {
+    justify-content: cover;
+    padding: 20px;
+}
+.location {
+    width: 100%;
+    display: flex;
+}
+.contact-social img{
+    width: 40px;
+    height: 40px;
+    display: row;   
+}
+
+.maps {
+    display: flex;
+    position:static;
+    margin-top: 100px;
+    justify-content: center;
+       
+}
+
+/*Parte do rodapé*/
+
+footer {
+    padding-top: 50px;
+    width: 100%;
+    height: 250px; 
+    text-shadow: 0px 3px 10px #464646; 
+}
+footer .main {
+    width: 100%;
+    height: 300px;
+    background: #296b39;
+    padding: 30px 10px;
+}
+.footer-links{
+    max-width: 90%;
+    min-width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    margin-top: 20px;  
+}
+.footer-Institucional, .footer-politicas-da-loja, .footer-contact, .footer-social {
+    color: white;
+    height: 100%;
+    min-height: 100px;
+}
+.footer-declaracao{
+    color: white;
+    height: 100%;
+    min-height: 50px;
+}
+.footer-links {
+    margin-bottom: 10px;
+}
+.footer-links h6{
+    margin-bottom: 8px;
+}
+.main .footer-social img{
+    width: 32px;
+    height: 32px;
+}
+footer .last {
+    width: 100%;
+    height: 50px;
+    background: #231720;
+    color: #ffffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+@media(max-width:576px){
+
+footer {
+    height: 100%;
+}
+footer .main{
+    height: 100%;
+}
+.footer-links {
+    flex-direction: column;
+    padding-left: 10%;
+}
+.row{
+    width: 200%;
+    flex-direction: column;
+    padding: 0;  
+}
+.container-contact{
+    display: block;
+    margin: 0
+    ;
+}
+section{
+    width: 400px;   
+}
+
+}
