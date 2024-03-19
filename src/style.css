@@ -95,6 +95,14 @@ body{
     justify-content: center;
     border: 4px solid #1aa375; 
     margin: 15px;
+    transition: transform 0.3s ease;
+}
+.col-box:hover{
+    transform: scale(1.1);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.50);
+    cursor: none;
+    background-color: #1aa375;
+
 }
 
 .services{
@@ -106,7 +114,14 @@ body{
 .card{
     border-radius: 50px;
     justify-content:space-around;
-    color:#464646
+    color:#464646;
+    transition: transform 0.3s ease;
+}
+.card:hover{
+    transform: scale(1.1);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.50);
+    cursor: pointer;
+    
 }
 
 .card-img-top{
@@ -293,6 +308,7 @@ footer .main {
     color: white;
     height: 100%;
     min-height: 100px;
+    cursor: pointer;
 }
 .footer-declaracao{
     color: white;

@@ -10,8 +10,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Antic&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Antic&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     
     
 </head>
@@ -21,7 +22,7 @@
     <header>
       
       <nav class="navbar navbar-expand-lg navbar-light navbar-custom fixed-top ">
-        <a class="navbar-brand" href="#logo"><img id="logo" src="./src/img/02-1.png" width="230px" alt="Logo Conatus Engenharia">
+        <a class="navbar-brand" href="./index.html"><img id="logo" src="./src/img/02-1.png" width="230px" alt="Logo Conatus Engenharia">
         </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links" aria-controls="navbar-links" aria-expanded="false" aria-label="Alterna navegação">
             <span class="navbar-toggler-icon"></span>
@@ -55,7 +56,7 @@
             
               <section>
                 <h2 id="formulario">Solicite seu Orçamento!</h2>
-                <form action="https://api.staticforms.xyz/submit" method="post">
+                <form action="https://api.staticforms.xyz/submit" method="post" id="formularioOrçamento">
                   <label>Nome</label>
                   <input type="text" name="name" placeholder="Digite seu nome" autocomplete="off" required>
                   <label>Telefone</label>
@@ -102,7 +103,7 @@
                   <p class="card-text"><small>Venda de todo o sistema de geração de energia fotovoltaica</small></p>
                 </div>
                 <div class="card-footer">
-                  <small class="text-muted">Solicite Orçamento</small>
+                  <small class="text-muted" onclick="redirecionarParaFormulario()" >Solicite Orçamento Aqui!</small>
                 </div>
               </div>
               <div class="card">
@@ -112,7 +113,7 @@
                   <p class="card-text"><small>Projeto personalizado e dimensionado para as necessidades exclusivas de nossos clientes. Tudo isso com metodologia eficar e em tempo recorde.</small></p>
                 </div>
                 <div class="card-footer">
-                  <small class="text-muted">Solicite Orçamento </small>
+                  <small class="text-muted" onclick="redirecionarParaFormulario()" >Solicite Orçamento Aqui! </small>
                 </div>
               </div>
               <div class="card">
@@ -122,7 +123,7 @@
                   <p class="card-text"><small>Execução dos projetos e instalação da infra-estrutura e todo o equipamento. Entrega do sistema dimensionado e funcionando.</small></p>                
                 </div>
                 <div class="card-footer">
-                  <small class="text-muted">Solicite Orçamento</small>
+                  <small class="text-muted" onclick="redirecionarParaFormulario()">Solicite Orçamento Aqui!</small>
                 </div>
               </div>
             </div> 
@@ -136,27 +137,27 @@
             <p class="card-text"><small>Manutenção preventiva e corretiva para que seu sistema funcione sempre da melhor forma e mantenha sempre o maior desempenho</small></p>
           </div>
           <div class="card-footer">
-            <small class="text-muted">Solicite Orçamento</small>
+            <small class="text-muted" onclick="redirecionarParaFormulario()">Solicite Orçamento Aqui!</small>
           </div>
         </div>
         <div class="card">
           <img class="card-img-top" src="./src/img/consultoria.png" alt="Imagem de capa do card">
           <div class="card-body">
             <h5 class="card-title"> <b>Consultoria</b></h5>
-            <p class="card-text"><small> Conte com a Conatus para decidir qual sistema se adequa as suas necessidades e total apoio na contratação de linhas de crédito e emologação de sistemas. </small></p>
+            <p class="card-text"><small > Conte com a Conatus para decidir qual sistema se adequa as suas necessidades e total apoio na contratação de linhas de crédito e emologação de sistemas. </small></p>
           </div>
           <div class="card-footer">
-            <small class="text-muted">Solicite Orçamento </small>
+            <small class="text-muted" onclick="redirecionarParaFormulario()">Solicite Orçamento Aqui! </small>
           </div>
         </div>
         <div class="card">
           <img class="card-img-top" src="./src/img/garantia.png" alt="Imagem de capa do card">
           <div class="card-body">
             <h5 class="card-title"><b> Garantia</b></h5>
-            <p class="card-text"href="#formulario"><small href="#formulario">Toda a instalação e equipamentos adquiquiridos pela conatus com garantia de retorno de investimento em 5 anos.</small></p>                
+            <p class="card-text"href="#formulario"><small>Toda a instalação e equipamentos adquiquiridos pela conatus com garantia de retorno de investimento em 5 anos.</small></p>                
           </div>
-          <div class="card-footer" href="#formulario">
-            <small class="text-muted"href="#formulario">Solicite Orçamento</small>
+          <div class="card-footer">
+            <small class="text-muted" onclick="redirecionarParaFormulario()">Solicite Orçamento Aqui!</small>
           </div>
         </div>
       </div> 
@@ -164,11 +165,12 @@
 <!-- Call to action-->  
 
 <div class="container-action" href="#formulario"><h1>Venha para a Conattus!</h1></div>
-<button type="button"class="btn btn-secondary btn-lg btn-block" href="#formulario" >Solicite seu orçamento ! </button>
+<button type="button" class="btn btn-warning btn-lg btn-block" onclick="redirecionarParaFormulario()"> <B>SOLICITE AGORA SEU ORÇAMENTO !</B> </button>
+
 
 <!--Card informativo-->
 
-<H1 class="title-services display-5">SOMENTE COM A ENERGIA SOLAR VOCÊ...</H1>
+<H1 class="title-services display-5">SOMENTE COM A ENERGIA SOLAR VOCÊ TEM...</H1>
 
 <div class="row">
   <div class="col col-box"><b>Economia na sua conta de Energia Elétrica;</b></h5></div>
@@ -249,22 +251,15 @@
           <div class="footer-declaracao">
              
                   <div class="footer-contact">
-                      <h3>Fale conosco</h3>
+                      <h3 onclick="redirecionarParaFormulario()">Fale conosco</h3>
                       <h6>18 99173-3045</h6>
                       <h6>conatusengenharia@gmail.com</h6>
-                      <h3>Solicie um orçamento</h3>
+                      <h3 onclick="redirecionarParaFormulario()">Solicie um orçamento</h3>
                       <h6>R. dos Cedros, 06 - San Fernando Valley, São José do Rio Preto - SP, 15093-709</h6>
                   </div>
           </div>
           
-          <div class="footer-Institucional">
-              <h3>Serviços </h3>
-              <h6>Sobre nós </h6>
-              <h6>Projetos </h6>
-              <h6>Orçamentos</h6>
-              <h6>Contatos</h6>
-          </div>
-         
+        
           <div class="footer-social">
               <h3>Fique Conectado</h3>
               <a href="https://www.instagram.com/conatusbr?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><img src="./src/img/instagram.png" alt="Instagram"></a>
@@ -307,7 +302,12 @@
   });
 </script>
 <script src="./src/fixed-whatsapp-button.js"></script>
-
+<script>
+  function redirecionarParaFormulario() {
+      // Redirecionar para o formulário com base no ID
+      window.location.href = '#formulario';
+  }
+  </script>
 
 
 </body>
